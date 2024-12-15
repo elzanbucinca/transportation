@@ -13,4 +13,7 @@ class Convert:
             bool: Returns True if the string is 'true' (case-insensitive), 
                   otherwise False.
         """
+        if value is None:
+            return False
+
         return value.lower() == 'true'

@@ -3,7 +3,7 @@ from domain.customer import Customer, CustomerType
 
 # Company class inherits from Customer and represents a company/corporate in the system
 class Company(Customer):
-    DB_LOCATION = "Transportation - v2/company.csv"
+    DB_LOCATION = "database/company.csv"
 
     def __init__(self, id: str = None,
                        company_name: str = None,

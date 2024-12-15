@@ -11,7 +11,7 @@ class Person(Customer):
         DB_LOCATION (str): Path to the database file for Person entities.
     """
 
-    DB_LOCATION = "Transportation - v2/person.csv"
+    DB_LOCATION = "database/person.csv"
 
     def __init__(self, id: str = None,
                  full_name: str = None,

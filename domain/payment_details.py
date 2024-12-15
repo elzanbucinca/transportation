@@ -10,7 +10,7 @@ class PaymentMethod(Enum):
 
 
 class PaymentDetails:
-    DB_LOCATION = "Transportation - v2/payment.csv"  # File location for payment data
+    DB_LOCATION = "database/payment.csv"  # File location for payment data
 
     def __init__(self,
                  transaction_id: str = None,

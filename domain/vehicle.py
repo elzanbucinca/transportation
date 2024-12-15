@@ -17,7 +17,7 @@ class VehicleStatusType(Enum):
 
 # Vehicle class representing different vehicle types and their status
 class Vehicle:
-    DB_LOCATION = "Transportation - v2/vehicle.csv" 
+    DB_LOCATION = "database/vehicle.csv" 
 
     def __init__(self, 
                     id: str = None,

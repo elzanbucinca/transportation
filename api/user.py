@@ -4,7 +4,7 @@ from domain.person import Person
 user = Blueprint('user', __name__)
 
 @user.route("/", methods = ['POST', 'PUT'])
-def create_user():
+def create_update():
     data = request.get_json()
     person = Person()
     person.from_dict_to_self(data)
@@ -20,7 +20,7 @@ def create_user():
 
 
 @user.route("/<id>", methods = ['GET', 'DELETE'])
-def handle_user(id):
+def get_delete(id):
     person = Person(id)
     
     match request.method:

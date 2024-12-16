@@ -32,6 +32,7 @@ def get_delete_private(id):
             person.delete()
             return jsonify({"id": id}), 200
         
+        
 @customer.route("/corporate", methods = ['POST', 'PUT'])
 def create_update_corporate():
     data = request.get_json()
